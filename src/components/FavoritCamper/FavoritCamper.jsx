@@ -4,8 +4,6 @@ import icons from '../../assets/icons.svg'
 import css from './FavoritCamper.module.css'
 
 function FavoritCamper({ camper = -1 }) {
-  console.log(`FavoritCamper ${camper} rendered`)
-
   const dispatch = useDispatch()
   const isFavorit = useSelector((state) => selectIsFavorits(state, camper))
   const className = isFavorit? css.theFavorit : css.notFavorit

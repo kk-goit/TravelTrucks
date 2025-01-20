@@ -30,7 +30,6 @@ function prepareParams(pageNo, filters) {
     }
   })
   
-  console.log(params)
   return params
 }
 

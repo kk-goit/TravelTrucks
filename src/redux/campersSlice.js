@@ -47,7 +47,6 @@ const slice = createSlice({
     .addCase(fetchCampers.rejected, (state, { error }) => {
       state.loading = false
       state.error = error.message
-      console.log(error)
     })
   },
   selectors: {

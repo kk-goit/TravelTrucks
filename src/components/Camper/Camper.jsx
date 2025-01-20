@@ -5,8 +5,6 @@ import icons from '../../assets/icons.svg'
 import css from './Camper.module.css'
 
 function Camper({ data }) {
-  console.log(`Camper ${data.id} rendered`)
-
   var imgSRC = 'no-image.png'
   if (data.gallery && data.gallery.length > 0)
     imgSRC = data.gallery[0].thumb

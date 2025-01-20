@@ -20,7 +20,6 @@ const slice = createSlice({
       state.location = action.payload.location
       state.form = action.payload.form
       state.equipments = { ...action.payload.equipments }
-      console.log(state)
     }
   },
   selectors: {
